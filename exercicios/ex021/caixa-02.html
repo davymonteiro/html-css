@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: white;
+            padding: 4px;
+        }
+        header > h1 {
+            margin-top: 2px;
+            margin-bottom: 13px;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: rgb(104, 104, 104);
+            padding: 4px;
+            box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.514);
+        }
+        nav > a {
+            display: inline-block;
+            color: white;
+            margin-right: 30px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px 1px 10px 8px;
+            margin-top: 10px;
+            border-radius: 15px 0px;
+            box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.397);
+        }
+        article {
+            background-color: rgb(190, 190, 190);
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(168, 167, 167);
+            font-weight: bold;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 6px;
+            text-align: center;
+            margin-top: 6px;
+
+        }
+        footer > p {
+            margin: 0px;
+        }
+        .bola {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+         .bolapreta {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta fugiat tempora non dolorum dolor consequuntur quam, repudiandae sequi illo perferendis iure dolorem excepturi quia. Enim doloribus quaerat quas odio vel!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Davy</p>
+    </footer>
+    <div class="bola"></div>
+    <div class="bolapreta"></div>
+    <div class="bola"></div>
+    <div class="bolapreta"></div>
+    <div class="bola"></div>
+</body>
+</html>

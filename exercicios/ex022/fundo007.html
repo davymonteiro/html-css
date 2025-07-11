@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: relative;
+            height: 93vh;
+            background-color: purple;
+            padding: 10px;
+        }
+        .conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 100px;
+            width: 200px;
+            background-color: yellow;
+            visibility: visible;
+
+            transform: translate(-50%, -50%);
+        }
+        .conteudo:active {
+            visibility: hidden;
+        }
+        #centro {
+            left: 50%;
+            top: 50%;  
+        }
+    
+        #topcenter {
+            left: 50%;
+            top: 0px;
+            transform: translate(-50%, 0px);
+        }
+        #centerbottom {
+            left: 50%;
+            top: 100%;
+            transform: translate(-50%, -100%);
+        }
+        #topleft {
+            left: 0%;
+            top: 0%;
+            transform: translate(0%, 0%);
+            
+        }
+        #topright {
+            left: 100%;
+            top: 0%;
+            transform: translate(-100%, 0%);
+        }
+        #leftcenter {
+            left: 0%;
+            top: 50%;
+            transform: translate(0%, -50%);
+        }
+        #rightcenter {
+            left: 100%;
+            top: 50%;
+            transform: translate(-100%, -50%);
+        }
+        #leftbottom {
+            left: 0%;
+            top: 100%;
+            transform: translate(0%, -100%);
+        }
+        #rightbottom {
+            left: 100%;
+            top: 100%;
+            transform: translate(-100%, -100%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article class="conteudo" id="centro">
+
+        </article>
+        <article class="conteudo" id="topcenter">
+
+        </article>
+        <article class="conteudo" id="topleft">
+
+        </article>
+        <article class="conteudo" id="topright">
+
+        </article>
+        <article class="conteudo" id="leftcenter">
+
+        </article>
+        <article class="conteudo" id="rightcenter">
+
+        </article>
+        <article class="conteudo" id="leftbottom">
+
+        </article>
+        <article class="conteudo" id="centerbottom">
+
+        </article>
+        <article class="conteudo" id="rightbottom">
+
+        </article>
+
+    </section>
+</body>
+</html>

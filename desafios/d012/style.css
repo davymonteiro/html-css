@@ -54,4 +54,5 @@ main p {
 main div#flor {
     width: 100%;
     background-color: transparent;
+    background-attachment: fixed;
 }

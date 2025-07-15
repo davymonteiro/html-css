@@ -43,18 +43,30 @@ section {
     font-family: var(--fonte-poesia);
     font-size: 3.5vw;
 }
+section p {
+    padding-bottom: 2em;
+}
 section.normal {
     background-color: white;
     color: black;
 }
 section.imagem {
+    background-image: url(imagens/flor.jpg);
+    background-position: center right;
+    background-size: cover;
     background-color: rgb(48, 48, 48);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.548);
+    background-attachment: fixed;
+}
+section#papel {
+    background-image: url(imagens/papel.jpg);
 }
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.37);
     padding: 5px;
     display: inline-block;
+    text-shadow: 1px 1px 0px black;
 }
 
 

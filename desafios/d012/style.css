@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 :root {
     --fonte-poesia: 'Sriracha', cursive;
-    --fonte-padrao: verdana, cursive;
+    --fonte-padrao: verdana, sans-serif;
 }
 *{
     margin: 0px;
@@ -11,6 +11,7 @@
 html, body {
     background-color: darkgray;
     min-height: 100vh;
+    font-family: var(--fonte-padrao);
 }
 header {
     background-color: black;
@@ -20,6 +21,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: 'Passion One', sans-serif;
+    font-size: 10vw;
 }
 header p {
     padding-bottom: 50px;
@@ -37,6 +40,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte-poesia);
+    font-size: 3.5vw;
 }
 section.normal {
     background-color: white;
@@ -48,7 +53,8 @@ section.imagem {
 }
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.37);
-    width: 400px;
+    padding: 5px;
+    display: inline-block;
 }
 
 
